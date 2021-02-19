@@ -70,20 +70,20 @@ const Formulario = ({crearCita}) => {
             {/* Formulario */}
             <form onSubmit={submitCita} className="cita">
                 {/* Nombre - Mascota */}
-                <label id="mascota">Nombre Mascota</label>
-                <input htmlFor="mascota" type="text" name="mascota" className="u-full-width" placeholder="Nombre Mascota" onChange={actualizarState} value={mascota}/>
+                <label htmlFor="mascota">Nombre Mascota</label>
+                <input id="mascota" type="text" name="mascota" className="u-full-width" placeholder="Nombre Mascota" onChange={actualizarState} value={mascota}/>
                 {/* Nombre - Dueño */}
-                <label id="dueno">Nombre Due&ntilde;o</label>
-                <input htmlFor="dueno" type="text" name="propietario" className="u-full-width" placeholder="Nombre  Dueño de la mascota" onChange={actualizarState} value={propietario}/>
+                <label htmlFor="dueno">Nombre Due&ntilde;o</label>
+                <input  id="dueno" type="text" name="propietario" className="u-full-width" placeholder="Nombre  Dueño de la mascota" onChange={actualizarState} value={propietario}/>
                 {/* Fecha */}
-                <label id="fecha">Fecha</label>
-                <input htmlFor="fecha" type="date" name="fecha" className="u-full-width" onChange={actualizarState} value={fecha} />
+                <label htmlFor="fecha">Fecha</label>
+                <input  id="fecha" type="date" name="fecha" className="u-full-width" onChange={actualizarState} value={fecha} />
                 {/* Hora */}
-                <label id="hora">Hora</label>
-                <input htmlFor="hora" type="time" name="hora" className="u-full-width" onChange={actualizarState} value={hora} />
+                <label htmlFor="hora">Hora</label>
+                <input  id="hora" type="time" name="hora" className="u-full-width" onChange={actualizarState} value={hora} />
                 {/* Sintomas/Descripcion */}
-                <label id="sintomas">Síntomas</label>
-                <textarea htmlFor="sintomas" className="u-full-width" name="sintomas" onChange={actualizarState} value={sintomas} ></textarea>
+                <label htmlFor="sintomas">Síntomas</label>
+                <textarea  id="sintomas" className="u-full-width" name="sintomas" onChange={actualizarState} value={sintomas} ></textarea>
                 {/* Agregar cita */}
                 <button type="submit" className="u-full-width button agregar" >Agregar Cita</button>
             </form>
