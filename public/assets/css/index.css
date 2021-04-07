@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  
+  background: linear-gradient(to right, #004e92, #000428); 
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+h1, h2, h3  {
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+  border-bottom: 1px solid white;
+  margin: 1rem;
+}
+
+.header h1 {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+/* Float the link section to the right */
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header h1 {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header-left {
+    float: none;
+  }
+  .header-right {
+    float: none;
+    text-align: center;
+  }
+}
+
+.lista-citas .media {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 3rem;
+}
+
+.lista-citas .media:last-of-type{
+  border-bottom: 0;
+}
+.lista-citas .media-body p {
+  margin:0;
+}
+.lista-citas .media-body button {
+  margin-top: 1rem!important;
+}
+.lista-citas .media-body span {
+  font-weight: bold;
+}
+
+label {
+  color: black;
+}
+
+input[type="date"],
+input[type="time"] {
+  height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.cita {
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+  /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center; */
+}
+
+.cita p {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+.cita p span {
+  font-weight: normal;
+
+}
+.cita:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cita:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/* BOTONES */
+.agregar,
+.agregar:hover {
+  background-image: linear-gradient(
+    90deg
+    ,#80c7d0 0,#c2f0fb 51%,#61dbfb);
+  color: black;
+  margin-top: 2rem;
+}
+
+.confirmar,
+.confirmar:hover {
+  background: #7BEF53;
+  background: -webkit-linear-gradient(top left, #7BEF53, #A3FFB0);
+  background: -moz-linear-gradient(top left, #7BEF53, #A3FFB0);
+  background: linear-gradient(to bottom right, #7BEF53, #A3FFB0);
+  color: black;
+}
+
+.cancelar,
+.cancelar:hover {
+  background-image: linear-gradient(to right, #d08080 0%, #fbc2c2 51%, #d32f2f 100%);
+  color: black;
+}
+
+.editar,
+.editar:hover {
+  background: #FCF120;
+  background: -webkit-linear-gradient(top left, #FCF120, #F4EC90);
+  background: -moz-linear-gradient(top left, #FCF120, #F4EC90);
+  background: linear-gradient(to bottom right, #FCF120, #F4EC90);
+  color: black;
+}
+
+.eliminar,
+.eliminar:hover {
+  background-image: linear-gradient(to right, #d08080 0%, #fbc2c2 51%, #d32f2f 100%);
+  color: black;
+}
+
+.alerta-error {
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family:  'Staatliches', cursive;
+} 
+
+.icono{
+  color: white;
+  margin: 2rem;
+  font-size: 6rem;
+}
+
+.footer{
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
